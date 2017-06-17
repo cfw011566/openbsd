@@ -1,0 +1,27 @@
+Config { font = "xft:go mono-9"
+       , bgColor = "black"
+       , fgColor = "grey"
+       , hideOnStart = False
+       , allDesktops = True
+       , overrideRedirect = True
+       , pickBroadest = False
+       , persistent = False
+       , borderColor = "grey"
+       , border = NoBorder
+       , position = Top
+       , lowerOnStart = True
+       , commands = [ Run Com "uname" ["-s","-r"] "" 36000
+                    , Run Com "/home/cfw/bin/xstatus.sh" ["load"] "load" 50
+                    , Run Com "/home/cfw/bin/xstatus.sh" ["network"] "network" 50
+                    , Run Com "/home/cfw/bin/xstatus.sh" ["netusage"] "netusage" 50
+                    , Run Com "/home/cfw/bin/xstatus.sh" ["power"] "power" 50
+                    , Run Com "/home/cfw/bin/xstatus.sh" ["vol"] "vol" 50
+                    , Run Com "/home/cfw/bin/xstatus.sh" ["temp"] "temp" 50
+                    , Run Com "/home/cfw/bin/weather.sh" [ ] "weather" 50
+                    , Run Date "%b %d %a" "date" 10
+                    , Run Date "%H:%M:%S" "time" 10
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = " %vol% | %temp% | %load% | <fc=yellow>%time%</fc> | } %weather% { | %netusage% | %network% | %power% | <fc=orange>%date%</fc> "
+       }
