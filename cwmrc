@@ -1,0 +1,81 @@
+# Set default Xft(3) font
+#fontname "sans-serif:pixelsize=15:bold"
+fontname "go mono:pixelsize=18:bold"
+#fontname "monaco:pixelsize=18:bold"
+
+# Turn on sticky-group mode
+sticky yes
+
+gap 27 0 0 0
+
+# Any entry here is shown in the application menu
+command chrome          "chrome --high-dpi-support=1 --force-device-scale-factor=1.25"
+command firefox         firefox
+command thunderbird	thunderbird
+command seamonkey	seamonkey
+command office		libreoffice
+command nagstamon	nagstamon
+command midori		midori
+command netsurf		netsurf
+command top             "xterm -e top"
+command big-xterm	"xterm -fs 14"
+command small-xterm	"xterm -fs 10"
+command white-xterm	"xterm -fg black -bg white"
+command white-big-xterm	"xterm -fs 14 -fg black -bg white"
+command pf-states	"xterm -e doas systat -n states 1"
+command pf-rules	"xterm -e doas systat -n rules 1"
+command vmstat		"xterm -e doas systat -n vmstat 1"
+
+# Autogroup definitions
+autogroup 1 Nagstamon
+autogroup 5 Chromium-browser
+autogroup 6 Midori
+autogroup 6 Netsurf
+autogroup 7 Seamonkey
+autogroup 8 Firefox
+autogroup 9 Thunderbird
+
+# Color definitions
+#color activeborder	white
+#color inactiveborder	black
+#color menufg	white
+#color menubg	black
+#color font	white
+#color selfont	green
+
+# Ignore programs by that name by not drawing borders around them.
+#ignore XMMS
+#ignore xwi
+#ignore xapm
+#ignore xclock
+
+# Keybindings
+bind-key M-1        group-only-1
+bind-key M-2        group-only-2
+bind-key M-3        group-only-3
+bind-key M-4        group-only-4
+bind-key M-5        group-only-5
+bind-key M-6        group-only-6
+bind-key M-7        group-only-7
+bind-key M-8        group-only-8
+bind-key M-9        group-only-9
+bind-key M-0        nogroup
+bind-key MS-1       window-movetogroup-1
+bind-key MS-2       window-movetogroup-2
+bind-key MS-3       window-movetogroup-3
+bind-key MS-4       window-movetogroup-4
+bind-key MS-5       window-movetogroup-5
+bind-key MS-6       window-movetogroup-6
+bind-key MS-7       window-movetogroup-7
+bind-key MS-8       window-movetogroup-8
+bind-key MS-9       window-movetogroup-9
+bind-key M-p	menu-exec
+bind-key CM-p	exec
+bind-key CM-v	vtile
+bind-key CM-h	htile
+bind-key CM-l	"xterm -e /home/cfw/bin/xscreen.sh lcd"
+bind-key CM-n	"xterm -e /home/cfw/bin/xscreen.sh nb"
+
+# Mousebindings
+bind-mouse M-2   window-lower
+bind-mouse M-3   window-resize
