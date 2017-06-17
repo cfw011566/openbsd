@@ -1,0 +1,35 @@
+XTerm*loginShell:	true
+XTerm*background:	black
+XTerm*foreground:	white
+XTerm*faceSize:		9
+!XTerm*faceName:		monaco
+XTerm*faceName:		go mono
+!XTerm*faceNameDoubleSize:	ar pl katim big5
+XTerm*scrollBar:	false
+XTerm*colorBDMode:	on
+!XTerm*colorBD:		cyan
+XTerm*colorBD:          #00afaf
+XTerm*colorRVMode:	on
+!XTerm*colorRV:		blue
+XTerm*colorRV:          #0000af
+XTerm*colorULMode:	on
+!XTerm*colorUL:		green
+XTerm*colorUL:          #00af00
+XTerm*highlightColor:   #808080
+
+xfig.paper_size:        a4
+xfig.inches:            false
+
+xpdf.initialZoom:	width
+
+XIdle.Delay:		5
+XIdle.Position:		nw
+!XIdle.Timeout:		30
+!XIdle.Program:		"/home/cfw/bin/wallpaper.sh"
+!XLock.mode:		dclock
+!XLock*led:		on
+!XLock.mode:		pyro
+!XLock*size:		2
+!XLock.mode:		fiberlamp
+!XLock*count:		500
+XLock.mode:		random
