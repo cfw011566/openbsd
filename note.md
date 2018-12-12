@@ -38,7 +38,7 @@
 # partion for OpenBSD in 10G hard disk
 
 partition | size | moutn point 
-----------|------|------------
+----------|:----:|--------
 a | 512M | /
 b | 512M | swap
 d | 512M | /tmp
